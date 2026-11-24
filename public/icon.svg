@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle (safe zone padding for maskable) -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Radar radar waves -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#2dd4bf" stroke-width="3" stroke-opacity="0.25" stroke-dasharray="8 8" />
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#2dd4bf" stroke-width="4" stroke-opacity="0.4" />
+  <circle cx="256" cy="256" r="70" fill="none" stroke="#2dd4bf" stroke-width="4" stroke-opacity="0.6" />
+
+  <!-- Central Compass & Calendar emblem -->
+  <g filter="url(#shadow)">
+    <!-- Shield / Compass backing -->
+    <circle cx="256" cy="256" r="50" fill="#ffffff" fill-opacity="0.1" />
+    
+    <!-- North Arrow / Compass Needle -->
+    <path d="M256 120 L278 240 L256 226 L234 240 Z" fill="url(#accentGrad)" />
+    <!-- South Needle -->
+    <path d="M256 392 L234 272 L256 286 L278 272 Z" fill="#99f6e4" fill-opacity="0.7" />
+    
+    <!-- Central Pivot Pin -->
+    <circle cx="256" cy="256" r="16" fill="#ffffff" />
+    <circle cx="256" cy="256" r="7" fill="#0f766e" />
+    
+    <!-- Spark / Discovery star -->
+    <circle cx="340" cy="172" r="10" fill="#f59e0b" />
+    <path d="M340 156 L343 169 L356 172 L343 175 L340 188 L337 175 L324 172 L337 169 Z" fill="#fbbf24" />
+  </g>
+</svg>

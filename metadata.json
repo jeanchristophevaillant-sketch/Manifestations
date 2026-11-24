@@ -1,0 +1,7 @@
+{
+  "name": "Veille Manifestations & Événements",
+  "description": "Outil de veille automatisée et rapport quotidien des manifestations sportives et culturelles sur 6 mois (Occitanie et France) avec stockage local et déduplication.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
